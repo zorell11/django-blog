@@ -1,0 +1,72 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+
+<!-- Main Content -->
+<div class="main-content">
+
+<!-- Article -->
+<article class="news-article">
+    <div class="article-meta">
+    <span class="article-category">BARCELONA</span>
+    <h1 class="article-title">{{ post.title }}</h1>
+    <div class="article-author">
+        <img src="https://via.placeholder.com/40" alt="Author" />
+        <span>by <a href="#" class="author">{{ user }}</a> • 28 May 2025</span>
+    </div>
+    </div>
+
+    <!-- Social Buttons -->
+
+
+    <!-- Main Image -->
+    <img src="https://via.placeholder.com/700x400" alt="Main News" class="article-img"/>
+
+    <p class="article-text">
+        {{ post.content }}
+    </p>
+</article>
+
+<!-- Sidebar -->
+<aside class="sidebar">
+    <section>
+    <h3>LATEST FOOTBALL BLOGS</h3>
+    <ul class="sidebar-articles">
+        <li>
+        <a href="#">
+            <div class="sidebar-item">
+            <img src="https://via.placeholder.com/60" alt="" />
+            <span>Lamine Yamal signs new six-year contract with Barcelona</span>
+            </div>
+        </a>
+        </li>
+        <li>
+        <a href="#">
+            <div class="sidebar-item">
+            <img src="https://via.placeholder.com/60" alt="" />
+            <span>Real Madrid confirm Xabi Alonso as new head coach</span>
+            </div>
+        </a>
+        </li>
+        <li>
+        <a href="#">
+            <div class="sidebar-item">
+            <img src="https://via.placeholder.com/60" alt="" />
+            <span>Preview: Tottenham Hotspur vs Brighton</span>
+            </div>
+        </a>
+        </li>
+        <li>
+        <a href="#">
+            <div class="sidebar-item">
+            <img src="https://via.placeholder.com/60" alt="" />
+            <span>Newcastle United aim to finish strong vs Everton</span>
+            </div>
+        </a>
+        </li>
+    </ul>
+    </section>
+</aside>
+
+</div>
+{% endblock %}
